@@ -1,0 +1,38 @@
+name: instagram_clone
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  flutter_native_splash: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Adicione sua imagem de logo aqui
+  assets:
+    - assets/images/logo.png
+    - assets/images/InstagramLogo.png
+    - assets/images/user.jpeg
+
+# Configuração do flutter_native_splash (fora das dependências)
+flutter_native_splash:
+  color: "#833AB4" # Cor de fundo da splash screen
+  image: assets/images/logo.png # Caminho para a sua logo
+  android: true # Habilitar para Android
+  ios: true # Habilitar para iOS
+  android_gravity: center # Centralizar a logo no Android
+  ios_content_mode: center # Centralizar a logo no iOS
